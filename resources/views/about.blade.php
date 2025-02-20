@@ -10,6 +10,8 @@
 <body>
     <a href="/">Home</a>
     <a href="/about">About</a>
+    <a href="/blog">Blog</a>
+    <a href="/contact">Contact</a>
     <h1>Halaman About</h1>
     <h3>Owner : {{ $nama }}</h3>
     <img src="img/913982-3840x2160-desktop-4k-liberty-walk-car-wallpaper.jpg" alt="Nissan GTR" width="700">
