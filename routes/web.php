@@ -21,10 +21,11 @@ Route::get('/blog', function () {
 
 Route::get('/contact', function () {
     return view('contact', [
+        'fullname' => 'Satrio Halim Abdurrahman',
         'email' => 'satriohalim21@gmail.com',
         'instagram' => '@satrio_halim',
         'github' => 'satriohalim',
-        'LinkedIn' => 'Satrio Halim',
+        'linkedin' => 'Satrio Halim',
         'mobile' => '081284581960'
     ]);
 });
