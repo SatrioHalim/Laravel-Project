@@ -3,11 +3,14 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+    return view('home', [
+        'title' => 'Home Page']);
 });
 
 Route::get('/about', function () {
-    return view('about', ['nama' => 'Satrio Halim']);
+    return view('about', [
+        'nama' => 'Satrio Halim',
+        'title' => 'About Page']);
 });
 
 Route::get('/blog', function () {
@@ -16,6 +19,7 @@ Route::get('/blog', function () {
         'date1' => '1 Januari 2012',
         'writer2' => 'Charles Leclerc',
         'date2' => '17 Agustus 2023',
+        'title' => 'Blog Page'
     ]);
 });
 
@@ -26,7 +30,8 @@ Route::get('/contact', function () {
         'instagram' => '@satrio_halim',
         'github' => 'satriohalim',
         'linkedin' => 'Satrio Halim',
-        'mobile' => '081284581960'
+        'mobile' => '081284581960',
+        'title' => 'Contact Page'
     ]);
 });
 
