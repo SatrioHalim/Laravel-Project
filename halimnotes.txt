@@ -1,0 +1,11 @@
+# Input Database melalui PHP artisan Tinker
+
+buka cmd jalankan php artisan Tinker
+ex
+terus jalanin command Post::create
+App\Models\Post::create([
+    'title' => 'Database Migrations in Laravel',
+    'author' => 'Satrio Halim Abdurrahman',
+    'slug' => 'database-migrations-in-laravel',
+    'body' => 'Migrations in Laravel provide a version control system for your database schema. They allow developers to define database tables and modifications using PHP code instead of manually writing SQL queries. With migrations, database changes can be tracked and shared across teams easily. This feature ensures consistency between development and production environments. Laravel also provides seeding functionality, allowing developers to populate databases with test data effortlessly.'
+]);
