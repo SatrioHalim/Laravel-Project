@@ -24,10 +24,10 @@ Route::get('/posts', function () {
     // efeknya ngaruh di performance karena query yang berkurang
     // $posts = Post::with(['author','category'])->latest()->get();
     // udah gaperlu pake cara diatas karena udah di set default di model Post
-    $posts = Post::latest()->get();
+    
     return view('posts',[
         'title' => 'Blog Page',
-        'posts' => $posts
+        'posts' => Post::filter(request(['search','category','author']))->latest()->get()
     ]);
 });
 
